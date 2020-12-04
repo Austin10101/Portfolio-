@@ -10,7 +10,7 @@ body{
 	height: 100vh;
 }
 .wrapper{
-	width: 860px;
+	float: right;
 	margin: 0;
 	
 }
