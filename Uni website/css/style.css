@@ -1,7 +1,39 @@
 *{
 	margin: 0;
 	padding: 0;
+	list-style: none;
+	text-decoration: none;
 }
+.header{
+	width: 100%;
+	height: 52;
+	display: block;
+	background-color: orange;
+}
+.inner_header{
+	width: 1000px;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+	background-color: white;
+}
+.logo_container{
+	height: 100%;
+	display: table;
+	float: left;
+
+	
+}
+.logo_container h1{
+	
+	height: 100%;
+	display: table-cell
+	vertical-align: center;
+	font-family: impact;
+	font-size 32px;
+	font-weight: 200;
+}
+
 body{
 	background-image: Images/Darksouls.jpg
 	-webkit-background-size: cover;
@@ -9,16 +41,16 @@ body{
 	background-position: center center;
 	height: 100vh;
 }
-.wrapper{
+.navigation{
 	float: right;
 	margin: 0;
 	
 }
-.wrapper ul{
+.navigation a{
 	list-style: none;
 	margin-top 2%
 }
- .wrapper ul li{
+ .navigation a li{
 	 background: blue;
 	 width: 170px;
 	 border: 1px solid;
@@ -32,6 +64,22 @@ body{
 	font-family: Imapct;
 
  }
- .wrapper ul li:hover{
+ .navigation a li:hover{
 	 background: black;
  }
+.footer{
+	position: fixed;
+width: 100%;
+	height: 50;
+	display: block;
+	background-color: orange;
+	
+}	
+.footer h1{
+
+position: fixed;
+  bottom: 0;
+  right: 700;
+  width: 300px;
+ 
+}
