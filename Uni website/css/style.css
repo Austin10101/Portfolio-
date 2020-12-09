@@ -1,3 +1,18 @@
+.youtube{
+	position: absolute;
+	left: 50%;
+	top: 30%;
+	transform: translateX(-50%);
+	font-family: impact;
+}
+
+.centerbox
+{
+	position: absolute;
+	left: 50%;
+	top: 70%;
+	transform: translateX(-50%);
+}
 *{
 	margin: 0;
 	padding: 0;
@@ -49,6 +64,8 @@ body{
 .navigation a{
 	list-style: none;
 	margin-top 2%
+	display: flex;
+	flex-direction: horizontal;
 }
  .navigation a li{
 	 background: blue;
@@ -61,7 +78,7 @@ body{
 	color: orange;
 	font-size; 14px;
 	Position: relative;
-	font-family: Imapct;
+	font-family: impact;
 
  }
  .navigation a li:hover{
