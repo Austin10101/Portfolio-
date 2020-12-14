@@ -1,3 +1,4 @@
+
 .youtube{
 	position: absolute;
 	left: 50%;
@@ -63,9 +64,10 @@ body{
 }
 .navigation a{
 	list-style: none;
-	margin-top 2%
+
 	display: flex;
 	flex-direction: horizontal;
+	float: right;
 }
  .navigation a li{
 	 background: blue;
@@ -87,10 +89,10 @@ body{
 .footer{
 	position: fixed;
 width: 100%;
-	height: 50;
+	height: 60;
 	display: block;
 	background-color: orange;
-	
+	 font-family: impact;
 }	
 .footer h1{
 
@@ -98,5 +100,9 @@ position: fixed;
   bottom: 0;
   right: 700;
   width: 300px;
- 
+ font-family: impact;
+}
+function main(){
+canvas.width = 640;
+canvas.height = 480;
 }

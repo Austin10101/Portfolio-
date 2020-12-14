@@ -1,0 +1,101 @@
+<html>
+<head>
+
+<title>Animation</title>
+</head>
+<body>
+  <link rel="stylesheet" href="css/style.css">
+	       <div class="header"> 
+		   <div class="inner_header">
+		   <div class="logo_container">
+		   <h1>AUSTIN'S PORTFOLIO</h1>
+		   </div>
+		    
+		       <ul class="navigation">
+			       <a href="Cats.html"</a><li>Cats</li>
+				  <a href="Models.html"</a> <li>Models</li>
+				   <a href="Animation.html"><li>Animation</li></a>
+				   <a href="portfolio.html"><li>Home</li></a>
+				
+				   
+				   </ul>
+			
+		   
+		   </div>
+		   </div>
+		   <source src="downloads/WideWalk.mp3" type="audio/mpeg">
+		   <h1> Medic widewalk</h1>
+		     <source src="downloads/WideWalk.mp3" type="audio/mpeg">
+<canvas id="canvas" style="background: gray"></canvas>
+ <style> position: absolute;
+	left: 50%;
+	top: 70%;
+	transform: translateX(-50%);
+	</style>
+
+<script>
+	
+	 
+	var x = 0;
+	var y = 0;
+	  
+	var srcX;
+	var srcY;
+	 
+	var sheetWidth= 399;
+	var sheetHeight= 263;
+     
+	var cols = 6;
+	var rows = 4;
+	 
+	var width = sheetWidth / cols;
+	var height = sheetHeight/ rows;
+	 
+	var currentFrame = 0;
+	 
+	var character = new Image();
+	character.src = "images/character.png"
+	
+	var canvas = document.getElementById('canvas');
+	canvas.width = 650;
+	canvas.height = 300;
+	
+	var ctx = canvas.getContext('2d');
+
+	function updateFrame(){
+	 
+		currentFrame = ++currentFrame % cols;
+	 
+		srcX = currentFrame * width;
+		srcY = 0;
+	}
+	 
+	function drawImage(){
+		
+		updateFrame();
+		ctx.drawImage(character, srcX, srcY, width, height,x,y,width,height);
+	}
+	 
+	setInterval(function(){
+		drawImage();
+	}, 100 );
+ctx.beginPath();
+ctx.arc(60,70,100,0,2*Math.PI);
+ctx.stroke();
+	 
+</script>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,11 +1,12 @@
 .bodyCats{
 	margin: 0;
 	padding: 0;
-	background: blue;
+	background: orange;
 }
 .slidershow{
+
 	width: 1920px;
-	height: 866px;
+	height: 90%;
 	overflow: hidden;
 }
 .middle{
@@ -14,7 +15,7 @@
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
-.navigation{
+.navigation2{
 	position: absolute;
 	bottom: 20px;
 	left: 50%;
